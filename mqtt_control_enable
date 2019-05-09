@@ -1,0 +1,17 @@
+#!/bin/sh /etc/rc.common
+START=96
+start() {
+	if [ `ps|grep 'sh /root/mqtt-control.sh'|grep -v grep|awk '{print $1}'|head -1` ]; then 
+		echo "mqtt control already run"
+	else
+		sh '/root/mqtt-control.sh' &
+	fi
+}
+
+stop() {
+	pidc=`ps|grep 'sh /root/mqtt-control.sh'|grep -v grep|awk '{print $1}'|head -1`
+	if [ $pidc ]; then
+		kill -9 $pidc >/dev/null
+		killall mosquitto_sub 2>/dev/null
+	fi
+}

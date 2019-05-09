@@ -1,0 +1,16 @@
+#!/bin/sh /etc/rc.common
+START=96
+start() {
+	if [ `ps|grep 'sh /root/mqtt-status.sh'|grep -v grep|awk '{print $1}'|head -1` ]; then
+		echo "mqtt status already run"
+	else
+		sh '/root/mqtt-status.sh' &
+	fi
+}
+
+stop() {
+	pids=`ps|grep 'sh /root/mqtt-status.sh'|grep -v grep|awk '{print $1}'|head -1`
+	if [ $pids ]; then
+		kill -9 $pids >/dev/null
+	fi
+}
