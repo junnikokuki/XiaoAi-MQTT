@@ -1,20 +1,20 @@
 # XiaoAi-MQTT
 
-wget -P /root https://github.com/junnikokuki/XiaoAi-MQTT/blob/master/libcares_1.10.0-1_meson.ipk
+wget -P /root https://raw.githubusercontent.com/junnikokuki/XiaoAi-MQTT/master/libcares_1.10.0-1_meson.ipk
 
-wget -P /root https://github.com/junnikokuki/XiaoAi-MQTT/blob/master/libmosquitto-nossl_1.4.7-1_meson.ipk
+wget -P /root https://raw.githubusercontent.com/junnikokuki/XiaoAi-MQTT/master/libmosquitto-nossl_1.4.7-1_meson.ipk
 
-wget -P /root https://github.com/junnikokuki/XiaoAi-MQTT/blob/master/mosquitto-client-nossl_1.4.7-1_meson.ipk
+wget -P /root https://raw.githubusercontent.com/junnikokuki/XiaoAi-MQTT/master/mosquitto-client-nossl_1.4.7-1_meson.ipk
 
-wget -P /root https://github.com/junnikokuki/XiaoAi-MQTT/blob/master/mqtt-control.sh
+wget -P /root https://raw.githubusercontent.com/junnikokuki/XiaoAi-MQTT/master/mqtt-control.sh
 
-wget -P /root https://github.com/junnikokuki/XiaoAi-MQTT/blob/master/mqtt-status.sh
+wget -P /root https://raw.githubusercontent.com/junnikokuki/XiaoAi-MQTT/master/mqtt-status.sh
 
-wget -P /root https://github.com/junnikokuki/XiaoAi-MQTT/blob/master/mqtt.conf
+wget -P /root https://raw.githubusercontent.com/junnikokuki/XiaoAi-MQTT/master/mqtt.conf
 
-wget -P /etc/init.d https://github.com/junnikokuki/XiaoAi-MQTT/blob/master/mqtt_control_enable
+wget -P /etc/init.d https://raw.githubusercontent.com/junnikokuki/XiaoAi-MQTT/master/mqtt_control_enable
 
-wget -P /etc/init.d https://github.com/junnikokuki/XiaoAi-MQTT/blob/master/mqtt_status_enable
+wget -P /etc/init.d https://raw.githubusercontent.com/junnikokuki/XiaoAi-MQTT/master/mqtt_status_enable
 
 cd /root
 
